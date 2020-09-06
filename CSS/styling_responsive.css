@@ -1,0 +1,33 @@
+@media only screen and (max-width : 770px){
+	div#main-content{
+		max-width: 500px;
+	}
+	#four-cards {
+	display: block;	
+	}
+	
+	#four-cards .column {
+	display: block;
+	}
+	
+	#four-cards .column .card {
+		margin: auto;
+	}
+}
+@media only screen and (max-width : 375px){
+	div#main-content{
+		max-width: 330px;
+	}
+	div#title div,
+	div#title h1 {
+		font-size: 25px;
+	}
+	div#title p {
+		width: 300px;
+	}	
+	
+	#four-cards .column .card,
+#four-cards .column .card p	{
+		max-width: 260px;
+	}
+}
