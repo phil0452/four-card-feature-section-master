@@ -1,95 +1,114 @@
+/* font family specified */
 html,
 body{
-	height: 100%;
-	margin: 0;
+	font-family: "Poppins";
+	font-size: 15px;
+	background-color: hsl(0, 0%, 98%);
 }
 
-body{
-	font-family: 'Inter';	
+div#main-content{
+	max-width: 1440px;
+	margin: auto;
 }
 
-.darkfont { 
-	color: hsl(240, 38%, 20%);
+p {
+	color: hsl(229, 6%, 66%);
 }
 
-.lightfont {
-	color: hsl(240, 18%, 77%);
+div#title{
+	text-align: center;
+    padding-top: 70px;
+    padding-bottom: 60px;
 }
-section {
+
+div#title div{
+	font-size: 30px;
+	color: hsl(229, 6%, 66%);
+	font-weight: 200;
+}
+
+div#title h1,
+.card h2 {
+		color: hsl(234, 12%, 34%);
+		font-weight: 600;
+	}
+
+div#title h1{
+	margin-top: 0;
+	font-size: 32px;
+}
+
+div#title p{
+	width: 520px;
+	margin: auto;
+}
+
+/*setup width, height and flex css for the cards div */
+#four-cards {
+	display: flex;
+	justify-content: center;
+	max-width: 1400px;
+	margin: auto;
+	height: 600px;
+}
+
+#four-cards .column {
 	display: flex;
 	flex-direction: column;
+    justify-content: center;
+	padding: 15px; 
 }
-section .slider {
-	position: relative;
-	max-width: 1175px;
-	display: flex;
-	margin: auto;	
-	margin-top: 65px;	
-}
+/* css for each card */
+	#four-cards .card {
+		border-top-left-radius: 7px;
+		border-top-right-radius: 7px;
+		padding: 15px  27px;
+		height: 240px;
+		width: 360px;
+		box-shadow: 0px 10px 20px hsl(229, 6%, 66%);
+	}
 
-section .slider .description .img-div {
+#four-cards .card p{
 	width: 300px;
-	position: absolute;
-	top: 109px;
+	line-height: 27px;
 }
 
-section .slider .description .img-div img{
-	float: right;
-}
-section .slider .description .comments {
-	position: absolute;
-    font-size: 29px;
-	font-weight: 300;
-    max-width: 600px;
-    margin-left: 88px;
-    top: 145px;
-	line-height: 40px;
+/* vertically center the supervisor 
+and calculator card div */
+#four-cards .column #supervisor,
+#four-cards .column #calculator{
+	align-self: center; 
 }
 
-section .slider .description .title {
-	width: 330px;
-	margin-top: 390px;
-	margin-left: 90px;
-	font-size: 16px;
+/* 4 top for colors */
+#four-cards #supervisor{
+	border-top: 5px solid hsl(180, 62%, 55%);	
 }
 
-section .slider .description .title .darkfont{
-	font-weight: 800;
-}
-section .slider .picture{
-	display: flex;
-	flex-direction: column;
-}
-section .slider .picture .background {
-	width: 625px;
-	height: 580px;
-	margin-top: -30px;
-	margin-left: 127px;
+#four-cards .column #builder{
+	border-top: 5px solid hsl(0, 78%, 62%);
+	margin-bottom: 30px;
 }
 
-section .slider .picture .person{
-	width: 480px;
-	height: 500px;
-	margin-left: 250px;
-	margin-top: -527px;
-	border-radius: 5px;
-	box-shadow: 10px 45px 80px -60px hsl(240, 38%, 20%);
+#four-cards .column #karma{
+	border-top: 5px solid hsl(34, 97%, 64%);
 }
 
-section .slider .picture .icons {
-	position: relative;
-    max-width: 131px;
-    margin: auto;
-    right: 15px;
-    top: -20px;
-	border-radius: 25px;
-	background-color: hsl(0, 0%, 100%);
+#four-cards #calculator{
+	border-top: 5px solid hsl(212, 86%, 64%);
 }
 
-section .slider .picture .icons img{
-	    padding: 22px 25px 19px 25px;
+#four-cards #supervisor p{
+	width: 270px;
 }
 
-section #slider-2 {
-	display: none;
+#four-cards #calculator p{
+	width: 300px;
+}
+
+img {
+	width: 50px;
+	height: 50px;
+	display: block;
+	margin-left: auto;
 }
