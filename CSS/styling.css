@@ -6,78 +6,65 @@ body{
 	background-color: hsl(0, 0%, 98%);
 }
 
-div#main-content{
-	max-width: 1440px;
-	margin: auto;
+/* setup padding for mobile */
+#main-content {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-p {
-	color: hsl(229, 6%, 66%);
+/* title section */
+#main-content #title-container{
+	padding: 13px;
+    margin-top: 74px;
 }
-
-div#title{
-	text-align: center;
-    padding-top: 70px;
-    padding-bottom: 60px;
-}
-
-div#title div{
-	font-size: 30px;
+#main-content #title-container .title {
+	font-size: 24px;
 	color: hsl(229, 6%, 66%);
 	font-weight: 200;
 }
 
-div#title h1,
-.card h2 {
-		color: hsl(234, 12%, 34%);
-		font-weight: 600;
-	}
-
-div#title h1{
-	margin-top: 0;
-	font-size: 32px;
+#main-content #title-container .bold {
+	color: hsl(234, 12%, 34%);
+	font-weight: 600;
+}
+p {
+	color: hsl(229, 6%, 66%);
+    text-align: center;
 }
 
-div#title p{
-	width: 520px;
-	margin: auto;
-}
-
-/*setup width, height and flex css for the cards div */
+/* styling for the cards section */
 #four-cards {
-	display: flex;
-	justify-content: center;
-	max-width: 1400px;
-	margin: auto;
-	height: 600px;
+	padding-left: 10px;
+    padding-right: 10px;
 }
 
-#four-cards .column {
-	display: flex;
-	flex-direction: column;
-    justify-content: center;
-	padding: 15px; 
-}
 /* css for each card */
-	#four-cards .card {
-		border-top-left-radius: 7px;
-		border-top-right-radius: 7px;
-		padding: 15px  27px;
-		height: 240px;
-		width: 360px;
-		box-shadow: 0px 10px 20px hsl(229, 6%, 66%);
-	}
-
-#four-cards .card p{
-	width: 300px;
-	line-height: 27px;
+#four-cards .card {
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	padding: 15px  27px;
+	height: 220px;
+	box-shadow: 0px 10px 20px hsl(229, 6%, 66%);
+	margin-bottom: 24px;
 }
 
-/* vertically center the supervisor 
-and calculator card div */
-#four-cards .column #supervisor,
-#four-cards .column #calculator{
-	align-self: center; 
+#four-cards .card h2 {
+	color: hsl(234, 12%, 34%);
+	font-weight: 600;
+	margin-bottom: 0;
+}
+	
+#four-cards .card p{
+	color: hsl(229, 6%, 66%);
+    text-align: left;
+    font-size: 13px;
+    line-height: 25px;
+	margin-top: 5px;
+}
+
+#four-cards .card img {
+    float: right;
+	margin-top: 15px;
 }
 
 /* 4 top for colors */
@@ -96,19 +83,4 @@ and calculator card div */
 
 #four-cards #calculator{
 	border-top: 5px solid hsl(212, 86%, 64%);
-}
-
-#four-cards #supervisor p{
-	width: 270px;
-}
-
-#four-cards #calculator p{
-	width: 300px;
-}
-
-img {
-	width: 50px;
-	height: 50px;
-	display: block;
-	margin-left: auto;
 }
