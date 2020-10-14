@@ -8,11 +8,7 @@
 	}
 }
 
-@media only screen and (min-width : 540px){
-	#main-content #title-container .title {
-		text-align: center;
-	}
-	
+@media only screen and (min-width : 540px){	
 	#four-cards .card {
 		margin: auto;
 		margin-bottom: 24px;
