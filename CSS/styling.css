@@ -43,10 +43,11 @@ p {
 #four-cards .card {
 	border-top-left-radius: 7px;
 	border-top-right-radius: 7px;
-	padding: 10px  20px;
+	padding: 15px  27px;
 	height: 220px;
 	box-shadow: 0px 10px 20px hsl(229, 6%, 66%);
 	margin-bottom: 24px;
+	width: 200px;
 }
 
 #four-cards .card h2 {
@@ -84,5 +85,6 @@ p {
 #four-cards #calculator{
 	border-top: 5px solid hsl(212, 86%, 64%);
 }
+
 
 
