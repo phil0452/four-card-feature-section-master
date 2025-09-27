@@ -58,7 +58,6 @@ p {
 #four-cards .card p{
 	color: hsl(229, 6%, 66%);
     text-align: left;
-    font-size: 13px;
     line-height: 25px;
 	margin-top: 5px;
 }
@@ -85,3 +84,4 @@ p {
 #four-cards #calculator{
 	border-top: 5px solid hsl(212, 86%, 64%);
 }
+
