@@ -3,18 +3,14 @@
 		font-size: 28px;
 	}
 	
-	#four-cards .card p{
+	#four-cards .card {max-width: 335px; }
+
+	#four-cards .column .card p{
 		font-size: 16px;
 	}
 }
 
-@media only screen and (min-width : 540px){	
-	#four-cards .card {
-		margin: auto;
-		margin-bottom: 24px;
-		width: 360px;
-	}
-	
+@media only screen and (min-width : 540px){		
 	#main-content #title-container p {
 		width: 445px;
 		margin: 20px auto 20px auto;
@@ -32,17 +28,15 @@
 	}
 	/*setup width, height and flex css for the cards div */
 	#four-cards {
-		display: flex;
-		justify-content: space-between;
-		width: 1318px;
-		margin: auto;
+		padding-left: 40px;
+		padding-right: 40px;
 	}
 
 /* vertically center the supervisor 
 	and calculator card div */
 	#four-cards .column {
 		align-self: center; 
-	}
+	}	
 	
 	#four-cards .2-card {
 		display: flex;
@@ -50,4 +44,9 @@
 	}	
 }
 
-
+@media only screen and (min-width : 1250px){
+	#four-cards {
+		display: flex;
+		justify-content: space-between;
+	}
+}
